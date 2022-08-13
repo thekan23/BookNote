@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		475AF5665E963DA227EB11E8 /* Pods_BookNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B4D674E0C8148AB433B093 /* Pods_BookNote.framework */; };
 		CECC379E28A7A8000052900A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC379D28A7A8000052900A /* AppDelegate.swift */; };
 		CECC37A028A7A8000052900A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC379F28A7A8000052900A /* SceneDelegate.swift */; };
 		CECC37A228A7A8000052900A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC37A128A7A8000052900A /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B9699AC91A89C182EDEA59B /* Pods-BookNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookNote.release.xcconfig"; path = "Target Support Files/Pods-BookNote/Pods-BookNote.release.xcconfig"; sourceTree = "<group>"; };
+		22B4D674E0C8148AB433B093 /* Pods_BookNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D62B1B38D8290D60117CB5A /* Pods-BookNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookNote.debug.xcconfig"; path = "Target Support Files/Pods-BookNote/Pods-BookNote.debug.xcconfig"; sourceTree = "<group>"; };
 		CECC379A28A7A8000052900A /* BookNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECC379D28A7A8000052900A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECC379F28A7A8000052900A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475AF5665E963DA227EB11E8 /* Pods_BookNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				CECC379C28A7A8000052900A /* BookNote */,
 				CECC379B28A7A8000052900A /* Products */,
+				FF5ED80EFD2832076183DF4B /* Pods */,
+				F3488670F571091E4761F23D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = BookNote;
 			sourceTree = "<group>";
 		};
+		F3488670F571091E4761F23D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22B4D674E0C8148AB433B093 /* Pods_BookNote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF5ED80EFD2832076183DF4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D62B1B38D8290D60117CB5A /* Pods-BookNote.debug.xcconfig */,
+				0B9699AC91A89C182EDEA59B /* Pods-BookNote.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CECC37AE28A7A8030052900A /* Build configuration list for PBXNativeTarget "BookNote" */;
 			buildPhases = (
+				C1A9B4857F53E7CF15C710D1 /* [CP] Check Pods Manifest.lock */,
 				CECC379628A7A8000052900A /* Sources */,
 				CECC379728A7A8000052900A /* Frameworks */,
 				CECC379828A7A8000052900A /* Resources */,
+				601EEC71A3B7E02E01658D2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		601EEC71A3B7E02E01658D2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookNote/Pods-BookNote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookNote/Pods-BookNote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookNote/Pods-BookNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1A9B4857F53E7CF15C710D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookNote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CECC379628A7A8000052900A /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		CECC37AF28A7A8030052900A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D62B1B38D8290D60117CB5A /* Pods-BookNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		CECC37B028A7A8030052900A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9699AC91A89C182EDEA59B /* Pods-BookNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
