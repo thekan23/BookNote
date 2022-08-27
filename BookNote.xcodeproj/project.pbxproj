@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		475AF5665E963DA227EB11E8 /* Pods_BookNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B4D674E0C8148AB433B093 /* Pods_BookNote.framework */; };
+		CE381F6528B9DE1000B2BC97 /* ReadingReviewStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE381F6428B9DE1000B2BC97 /* ReadingReviewStorage.swift */; };
+		CE381F6728B9DE3A00B2BC97 /* ReadingReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE381F6628B9DE3A00B2BC97 /* ReadingReview.swift */; };
+		CE381F6928B9DEBF00B2BC97 /* ReadingReviewMemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE381F6828B9DEBF00B2BC97 /* ReadingReviewMemoryStorage.swift */; };
+		CE381F7028B9E5AA00B2BC97 /* DetailReadingReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE381F6E28B9E5AA00B2BC97 /* DetailReadingReviewViewController.swift */; };
+		CE381F7128B9E5AA00B2BC97 /* DetailReadingReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE381F6F28B9E5AA00B2BC97 /* DetailReadingReviewViewController.xib */; };
 		CECC379E28A7A8000052900A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC379D28A7A8000052900A /* AppDelegate.swift */; };
 		CECC37A028A7A8000052900A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC379F28A7A8000052900A /* SceneDelegate.swift */; };
 		CECC37A728A7A8030052900A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECC37A628A7A8030052900A /* Assets.xcassets */; };
@@ -26,6 +31,11 @@
 		0B9699AC91A89C182EDEA59B /* Pods-BookNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookNote.release.xcconfig"; path = "Target Support Files/Pods-BookNote/Pods-BookNote.release.xcconfig"; sourceTree = "<group>"; };
 		22B4D674E0C8148AB433B093 /* Pods_BookNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D62B1B38D8290D60117CB5A /* Pods-BookNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookNote.debug.xcconfig"; path = "Target Support Files/Pods-BookNote/Pods-BookNote.debug.xcconfig"; sourceTree = "<group>"; };
+		CE381F6428B9DE1000B2BC97 /* ReadingReviewStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingReviewStorage.swift; sourceTree = "<group>"; };
+		CE381F6628B9DE3A00B2BC97 /* ReadingReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingReview.swift; sourceTree = "<group>"; };
+		CE381F6828B9DEBF00B2BC97 /* ReadingReviewMemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingReviewMemoryStorage.swift; sourceTree = "<group>"; };
+		CE381F6E28B9E5AA00B2BC97 /* DetailReadingReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReadingReviewViewController.swift; sourceTree = "<group>"; };
+		CE381F6F28B9E5AA00B2BC97 /* DetailReadingReviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailReadingReviewViewController.xib; sourceTree = "<group>"; };
 		CECC379A28A7A8000052900A /* BookNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECC379D28A7A8000052900A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECC379F28A7A8000052900A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +64,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE381F5F28B9DD9900B2BC97 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				CE381F6428B9DE1000B2BC97 /* ReadingReviewStorage.swift */,
+				CE381F6628B9DE3A00B2BC97 /* ReadingReview.swift */,
+				CE381F6828B9DEBF00B2BC97 /* ReadingReviewMemoryStorage.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		CE381F6D28B9E58D00B2BC97 /* DetailReadingReview */ = {
+			isa = PBXGroup;
+			children = (
+				CE381F6E28B9E5AA00B2BC97 /* DetailReadingReviewViewController.swift */,
+				CE381F6F28B9E5AA00B2BC97 /* DetailReadingReviewViewController.xib */,
+			);
+			path = DetailReadingReview;
+			sourceTree = "<group>";
+		};
 		CECC379128A7A8000052900A = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +104,7 @@
 		CECC379C28A7A8000052900A /* BookNote */ = {
 			isa = PBXGroup;
 			children = (
+				CE381F5F28B9DD9900B2BC97 /* Database */,
 				CEF1A45E28ABD6A3008403BB /* Feature */,
 				CECC379D28A7A8000052900A /* AppDelegate.swift */,
 				CECC379F28A7A8000052900A /* SceneDelegate.swift */,
@@ -88,6 +118,7 @@
 		CEF1A45E28ABD6A3008403BB /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				CE381F6D28B9E58D00B2BC97 /* DetailReadingReview */,
 				CEF1A47028ABD8E1008403BB /* Main */,
 				CEF1A46B28ABD850008403BB /* Auth */,
 				CEF1A46228ABD734008403BB /* Settings */,
@@ -212,6 +243,7 @@
 				CEF1A46D28ABD877008403BB /* Auth.storyboard in Resources */,
 				CEF1A50328AC64E7008403BB /* Home.storyboard in Resources */,
 				CECC37AA28A7A8030052900A /* LaunchScreen.storyboard in Resources */,
+				CE381F7128B9E5AA00B2BC97 /* DetailReadingReviewViewController.xib in Resources */,
 				CEF1A50728AC6590008403BB /* Settings.storyboard in Resources */,
 				CECC37A728A7A8030052900A /* Assets.xcassets in Resources */,
 				CEF1A4FF28AC6478008403BB /* Main.storyboard in Resources */,
@@ -269,10 +301,14 @@
 			files = (
 				CEF1A50528AC64F6008403BB /* HomeViewController.swift in Sources */,
 				CEF1A46F28ABD884008403BB /* AuthViewController.swift in Sources */,
+				CE381F6728B9DE3A00B2BC97 /* ReadingReview.swift in Sources */,
 				CECC379E28A7A8000052900A /* AppDelegate.swift in Sources */,
+				CE381F7028B9E5AA00B2BC97 /* DetailReadingReviewViewController.swift in Sources */,
 				CECC37A028A7A8000052900A /* SceneDelegate.swift in Sources */,
 				CEF1A50128AC6482008403BB /* MainViewController.swift in Sources */,
+				CE381F6928B9DEBF00B2BC97 /* ReadingReviewMemoryStorage.swift in Sources */,
 				CEF1A50928AC659A008403BB /* SettingsViewController.swift in Sources */,
+				CE381F6528B9DE1000B2BC97 /* ReadingReviewStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
